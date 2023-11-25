@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border-radius:5px;
+    font-weight:700;
+    font-family:sans-serif;
+}
+
+.country-content{
+    width:1300px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    margin: 0 auto;
+    gap:15px;
+}
+
+.single-country-card{
+    border:2px solid #eb2f06;
+    padding:5px 10px;
+}
+
+.single-country-card h3{
+    text-align:center;
+    font-size:25px;
+}
+
+.single-country-card p{
+    font-size:15px;
+    background-color:#f7f1e3;
+    color:#000;
+    margin-top:5px;
+    border-radius:5px;
+    padding:5px;
+}
+
+.single-country-card p span{
+    font-size:18px;
+    color:#000;
+}
+
+.single-country-card img{
+    margin:5px 0;
+}
+
+.card-btn {
+    text-align:center;
+    margin-top:10px;
+}
+.card-btn button{
+    background-color: #eb2f06;
+    padding:8px 10px;
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    font-size:15px;
+}
+
+.coatOfArms img{
+    width:30px;
+}
+
+.country-title{
+   display: flex;
+   align-items:center;
+   justify-content:space-between;
+   padding:0 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .country-content{
+        width:92%;
+        grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .country-content{
+        width:100%;
+        padding:0 5px;
+        grid-template-columns:repeat(1,1fr);
+       }  
+        
+    }
+
